@@ -23,7 +23,6 @@ func main() {
 	}
 
 	res := doc.Has("tbody")
-
 	fmt.Printf("%+v\n\n", res)
 
 	doc.Find("tr").Each(func(index int, item *goquery.Selection) {
